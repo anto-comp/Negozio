@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/anto-comp/negozio/main/icona.jpg">
+        <meta charset="UTF-8">
+        <title>Antony shop</title>
+        
+      <link rel="stylesheet" href="css/home.css"></head>
+   
+      <nav>
+          <ul>
+             
+             <li><a onclick="cambiapagina(1)" href="home.html">Tutto</a>
+              
+                 
+             </li>
+             <li><a onclick="cambiapagina(2)" href="giacche.html">Giacche</a>
+                 
+             </li>
+             <li><a onclick="cambiapagina(3)" href="maglie.html">Maglie e camicie</a></li>
+             <li><a  onclick="cambiapagina(4)" href="pantaloni.html" >Pantaloni</a>
+              
+            
+             
+             </li>
+             <li><a onclick="cambiapagina(5)" href="scarpe.html">Scarpe</a>
+               
+             </li>
+             <li><a onclick="cambiapagina(6)" href="accessori.html">Accessori</a></li>
+             <li><div id="conti"></div><a href="carrello.html"><svg aria-hidden="true" class="pre-nav-design-icon" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none"><path stroke="currentColor" stroke-width="1.5" d="M8.25 8.25V6a2.25 2.25 0 012.25-2.25h3a2.25 2.25 0 110 4.5H3.75v8.25a3.75 3.75 0 003.75 3.75h9a3.75 3.75 0 003.75-3.75V8.25H17.5"></path></svg></a></li>
+           
+          </ul>
+       </nav>
+       <br><br><br>
+       <div id="sconto"><p id="nome"> </p> </div>
+       <br>
+       <div id="pub">
+        <table align="center"  width=100%; height="100%" >
+
+            <tr height="95%" position="absolute" >
+            <td >  </td>
+            </tr>
+            <tr height="5%" >
+                <td  align="left" > <h1>ACCESSORI</h1>  </td>
+                </tr> </table>
+       </div>
+       <br><br><br>
+       <table align="center" id="prodotti" width=100%; position="absolute" >
+
+       
+        <tr  >
+            <td width=33%;><br><div class="uno" id="due"></div> </td>
+            <td width=33%;> <br><div class="due"id="dodici"></div> </td>
+            <td width=33%;> <br><div class="due"id="quindici"></div> </td>
+            
+            </tr>
+            <tr  >
+                <td width=33%;><br><div class="uno" id="sedici"></div> </td>
+                <td width=33%;> <br><div class="due"id="diciannove"></div> </td>
+                
+                </tr>
+            
+
+ </table>
+ <br><br><br>
+ <div id="fondo"><h2 style="color: black;" onclick="reset()">sito sviluppato da Antonio Composto</h2></div>
+      <script type="text/javascript" src="js/home.js"></script>
+</html>

@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/anto-comp/negozio/main/icona.jpg">
+        <meta charset="UTF-8">
+        <title>Antony shop</title>
+        
+      <style>
+        
+
+  html{
+    background-image: url(https://raw.githubusercontent.com/anto-comp/negozio/main/vetrina.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  div#container{
+    background: #e9e6e6;
+    border-radius: 25px;
+  width: 30%;
+ 
+  overflow: hidden;
+  position: relative,absolute;
+
+margin-top: 22%;
+margin-left: 35%;
+  }
+  h1{
+    font-size:x-large;
+    text-align: center;
+  }
+  #fondo{
+  background: #e9e6e6;
+  width: 100%;
+  height: 65px;
+  overflow: hidden;
+  position: relative,absolute;
+  margin: 0 auto;
+text-align: center;
+margin-top: 19%;
+}
+
+
+
+      </style>
+   
+      <div id="container"></div>
+      <div id="fondo"><h2 style="color: black;" onclick="reset()">sito sviluppato da Antonio Composto</h2></div>
+      <script>
+        var nome = localStorage.getItem("nome");
+        var cognome = localStorage.getItem("cognome");
+        var via = localStorage.getItem("via");
+        var iban = localStorage.getItem("iban");
+        var email = localStorage.getItem("email");
+        var cognome = localStorage.getItem("cognome");
+        var totaleprezzo = localStorage.getItem("totaleprezzo");
+        var numeroarticoli = localStorage.getItem("numeroarticoli");
+
+        var prezzoscontato=(parseInt(localStorage.getItem("totaleprezzo"))/100)*90;
+        localStorage.setItem("prezzoscontato", prezzoscontato);
+        
+      document.getElementById("container").innerHTML='<h1>'+nome+' il tuo ordine è avvenuto con successo, ti abbiamo mandato l email di conferma all indirizzo '+email+'<br>Il tuo ordine arriverà entro 3 giorni lavorativi<br>Speriamo di rivederti presto</h1><br>';
+
+        
+        function reset() {
+            document.location.href="registrazione.html";
+        }
+      </script>
+</html>

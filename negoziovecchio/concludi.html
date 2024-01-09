@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/anto-comp/negozio/main/icona.jpg">
+        <meta charset="UTF-8">
+        <title>Antony shop</title>
+        
+      <style>
+        
+
+  html{
+    background-image: url(https://raw.githubusercontent.com/anto-comp/negozio/main/vetrina2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  div#container{
+    background: #e9e6e6;
+    border-radius: 25px;
+  width: 30%;
+  
+  overflow: hidden;
+  position: relative,absolute;
+
+margin-top: 10%;
+margin-left: 35%;
+  }
+  h1{
+    font-size:xx-large;
+    text-align: center;
+  }
+  h3,p{
+    margin-left: 5%;
+  }
+  #centro{
+    text-align: center;
+    margin-left: 0%;
+  }
+  #com{
+    margin-left: 5%;
+                border-color:#ffffff ;
+                border-style:solid;
+                width: 20%;
+                height: 6%;
+                border-radius: 25px;
+                background-color: #000000;
+                font-size:medium; 
+            }
+            #ins{
+                margin-left: 5%;
+                border-color:#ffffff ;
+                border-style:solid;
+                width: 40%;
+                height: 6%;
+                border-radius: 25px;
+                font-size:medium; 
+            }
+            #fine{
+                
+                border-color:#ffffff ;
+                border-style:solid;
+                width: 20%;
+                height: 7%;
+                border-radius: 25px;
+                background-color: #000000;
+                font-size:large;
+                margin-left: 40%; 
+            }
+      </style>
+   
+      <div id="container"></div>
+      <script>
+        var nome = localStorage.getItem("nome");
+        var cognome = localStorage.getItem("cognome");
+        var via = localStorage.getItem("via");
+        var iban = localStorage.getItem("iban");
+        var email = localStorage.getItem("email");
+        var cognome = localStorage.getItem("cognome");
+        var totaleprezzo = localStorage.getItem("totaleprezzo");
+        var numeroarticoli = localStorage.getItem("numeroarticoli");
+
+        var prezzoscontato=(parseInt(localStorage.getItem("totaleprezzo"))/100)*90;
+        localStorage.setItem("prezzoscontato", prezzoscontato);
+        
+        document.getElementById("container").innerHTML='<h1 align="centre">CONCLUDI</h1><h3>nome: '+nome+' '+cognome+'</h3><h3>email: '+email+'</h3><h3>spedizione presso: '+via+'</h3><h3>metodo di pagamento: iban '+iban+'</h3><h3>numero articoli: '+numeroarticoli+'</h3><h3>TOTALE: €'+totaleprezzo+'</h3><br><input id="ins"   placeholder="   inserisci buono sconto"><input type="button" id="com" value="applica" onclick="sconta()" style="color: white;"></input><br><br><br><input type="button" id="fine" value="CONCLUDI" onclick="fine()" style="color: white;"></input><p id="centro" onclick="annulla()" >annulla<p><br><br>';
+
+        function sconta() {
+            var parola=document.getElementById("ins").value;
+            if (parola=="SCONTA10") {
+                var differenza=prezzoscontato-totaleprezzo;
+                document.getElementById("container").innerHTML='<h1 align="centre">CONCLUDI</h1><h3>nome: '+nome+' '+cognome+'</h3><h3>email: '+email+'</h3><h3>spedizione presso: '+via+'</h3><h3>metodo di pagamento: iban '+iban+'</h3><h3>numero articoli: '+numeroarticoli+'</h3><h3>TOTALE: €'+prezzoscontato+'</h3><p>utilizzato codice SCONTA10: '+differenza+'€</p><br><input id="ins"   placeholder="   inserisci buono sconto"><input type="button" id="com" value="applica" onclick="sconta()" style="color: white;"></input><br><br><br><input type="button" id="fine" value="CONCLUDI" onclick="fine()" style="color: white;"></input><p id="centro" onclick="annulla()" >annulla<p><br><br>';
+            }
+            
+        }
+        function annulla() {
+            document.location.href="home.html";
+        }
+        function fine() {
+            document.location.href="fine.html";
+        }
+      </script>
+</html>

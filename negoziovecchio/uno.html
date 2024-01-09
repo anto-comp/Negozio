@@ -1,0 +1,44 @@
+
+
+
+
+
+        <html>
+    <style>
+        img{
+            width: 10px;
+        }
+    </style>
+    <body>
+        
+            <h1 id="risu"></h1>
+            <input type="button" id="bottone4"  value="/" onclick="divisione()">
+     
+    </body>
+    <script>
+        var canzone = [
+		{
+			titolo: "La primavera",
+			artista: "Vivaldii",
+			copertina: "https://raw.githubusercontent.com/anto-comp/music/main/musica/sinfonieClassiche/imm/AntonioVivaldi.jpg",
+			audioFile: "https://raw.githubusercontent.com/anto-comp/music/main/musica/sinfonieClassiche/audio/Antonio%20Vivaldi_%20La%20Primavera.mp3",
+            
+			color: "rgb(255, 36, 0)"
+		},
+		{
+			titolo: "Inno alla gioia",
+			artista: "Beethoven",
+			copertina: "https://raw.githubusercontent.com/anto-comp/music/main/musica/sinfonieClassiche/imm/IMG_4353.jpg",
+			audioFile: "https://raw.githubusercontent.com/anto-comp/music/main/musica/sinfonieClassiche/audio/Beethoven%20-%20%20Inno%20alla%20gioia.mp3",
+			color: "#808000"
+		}]
+        
+       
+        function divisione() {
+            
+           document.getElementById("risu").innerHTML='<img src="' + canzone[1].copertina + '">';
+
+        }
+    
+    </script>
+</html>

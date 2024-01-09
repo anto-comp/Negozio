@@ -1,0 +1,103 @@
+nav{background: #ffffff;
+    height: 52px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  
+  nav ul{list-style: none;margin: 0 auto;padding: 0;width: 100%;max-width: 3000;}
+  nav ul ul{display: none;position: absolute;top: 100%;left: 0;width: 100%;}
+  nav ul li{position: relative;float:left;left:0;width:14.28%;text-align:center;}
+  nav ul li:hover ul{display:block;}
+  nav ul li li{position: relative;float:none;width:100%;border:none;}
+  nav ul li a{display:block;text-decoration:none;color: rgb(0, 0, 0);padding: 15px 25px;font-size:1.2em;box-sizing: border-box;border-right:solid 2px #000000;}
+  nav ul ul li a{font-size:1rem;border-bottom:solid 2px #000000;}
+  nav ul ul li:first-child a{border-top:solid 2px #000000;}
+  nav ul li:hover a{background:#000000;color: #ffffff;text-decoration:none;transition:0.5s;}
+  nav ul li li:hover a{background:#ffffff;color: #000000;}
+
+  div#sconto{
+    background: #e9e6e6;
+  width: 100%;
+  height: 65px;
+  overflow: hidden;
+  position: relative,absolute;
+  margin: 0 auto;
+text-align: center;
+  }
+  div#pub{
+    color: #ffffff;
+    width: 100%;
+  height: 55%;
+  overflow: hidden;
+  position: relative,absolute;
+background-size: 100%;
+    background-image:url(https://raw.githubusercontent.com/anto-comp/negozio/main/vetrina.jpg);
+  }
+  h1{
+    color: #ffffff;
+    font-size:xx-large;
+    cursor:default;
+  }
+.uno{
+    margin: auto;
+    background-color: #e9e6e6;
+    width: 85% ;
+  height: 100%;
+  overflow: hidden;
+  position: relative,absolute;
+  cursor:alias;
+}
+.due{
+    margin: auto;
+    background-color: #e9e6e6;
+    width: 85% ;
+  height: 100%;
+  overflow: hidden;
+  position: relative,absolute;
+  cursor:alias;
+}
+.tre{
+    margin: auto;
+    background-color: #e9e6e6;
+    width: 85%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute,relative;
+  cursor:alias;
+}
+#com{
+  float: right;
+  margin-right: 5%;
+  border-color:#ffffff ;
+  border-style:solid;
+  width: 40%;
+  height: 60%;
+  border-radius: 25px;
+  background-color: #000000;
+  font-size:large;
+  cursor:grab;
+}
+h1,h2,h3{
+  margin-left: 5%;
+  cursor:default;
+}
+.nero{
+  color: #000000;
+}
+#fondo{
+  background: #e9e6e6;
+  width: 100%;
+  height: 65px;
+  overflow: hidden;
+  position: relative,absolute;
+  margin: 0 auto;
+text-align: center;
+margin-bottom: 0%;
+}
+#conti{
+  float: left;
+  margin-left: 10%;
+  margin-top: 20px;
+}

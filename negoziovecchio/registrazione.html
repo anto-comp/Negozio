@@ -1,0 +1,214 @@
+
+<html>
+  <head>
+    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/anto-comp/negozio/main/icona.jpg">
+  <meta charset="UTF-8"> 
+  </head>
+ 
+<style>
+    html{background-image: url(https://wallpaperaccess.com/full/318703.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+    h1{text-align: center;}
+    p{text-align: center;}
+    h2{text-align: center;}
+    h3{color: aliceblue;font-size:xx-large;}
+    
+    .dati{
+    margin-left: 35%;
+    margin-top: 5%;
+    width: 30%;
+    height: 50%;
+    background-color: rgba(255, 255, 255, 0.8);
+    
+    position: absolute;
+    border-radius: 20px;
+    
+  
+    }
+ 
+    #nome,#cognome,#email,#password{
+        border: 0px;
+        border-radius: 20px;
+        width: 40%;
+        height: 5%;
+    }
+
+    #via,#iban{
+        border: 0px;
+        border-radius: 20px;
+        width: 81%;
+        height: 5%;
+        margin: auto;
+    }
+
+    #nome,#email,#via,#iban{
+        margin-left: 9%;
+    }
+   
+   
+    
+
+    #bottone{
+        margin-left: 42.5%;
+        background-color: rgb(255, 0, 0);
+        border: 0px;
+        border-radius: 10px;
+        width: 15%;
+        height: 5%;
+        cursor: pointer;
+       
+    }
+
+    .fl-fl {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding: 4px;
+  width: 190px;
+  position: fixed;
+  right: -160px;
+  z-index: 9184901;
+  font-weight: bold;
+  font-size: 10px;
+  -webkit-transition: all .25s ease;
+  -moz-transition: all .25s ease;
+  -ms-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  transition: all .25s ease;
+}
+
+.fl-fl:hover {
+  right: 0;
+}
+
+.fl-fl a {
+  color: #000000 ;
+  text-decoration: none;
+  text-align: center;
+  line-height: 43px;
+  vertical-align: top;
+}
+
+.float-ig {
+  border: #000000;
+  border: 10px; 
+  top: 160px;
+  background: rgba(255, 255, 255, 0.799);
+  font-weight: bold;
+}
+
+</style>
+<h3>ANTONY SHOP</h3>
+<div class="fl-fl float-ig">
+    <i id="nero" class="fa fa-home"></i>
+    <a href="./../../index.html" target="_blank"
+      >HOME</a
+    >
+  </div>
+
+
+<br>
+
+
+<div class="dati">
+ <br>
+<h1>REGISTRATI</h1>
+
+    <br>
+    <form action="home.html" onsubmit="stampa()">
+      <input type="text" id="nome" placeholder="  inserisci nome" required>
+    <input type="text" id="cognome" placeholder="  inserisci cognome" required>
+    <br><br>
+    <input type="email" id="email" placeholder="  inserisci email" required>
+    <input type="password" id="password" placeholder="  inserisci password" required>
+    <br><br>
+    <input type="via" id="via" placeholder="   inserisci via" required>
+    <br><br>
+    <input type="iban" id="iban" placeholder="   inserisci iban" required>
+    <br><br>
+
+
+<br><br>
+    <input type="submit" id="bottone" value="invia" onclick="">
+    </form>
+   
+
+</div>
+
+
+   
+
+    <script>
+        
+    
+
+        function stampa() {
+
+           
+             
+             var nome=document.getElementById("nome").value;
+            var cognome=document.getElementById("cognome").value;
+            var email=document.getElementById("email").value;
+            var password=document.getElementById("password").value;
+            var via=document.getElementById("via").value;
+            var iban=document.getElementById("iban").value;
+            
+               
+
+
+  
+  localStorage.setItem("cognome", cognome);
+  localStorage.setItem("nome", nome);
+  localStorage.setItem("email", email);
+  localStorage.setItem("pasword", password);
+  localStorage.setItem("via", via);
+  localStorage.setItem("iban", iban);
+  localStorage.setItem("mandante", "1");
+
+  localStorage.setItem("js", "1");
+var car="-"
+  localStorage.setItem("array", car);
+
+  localStorage.setItem("totaleprezzo", 0);
+    localStorage.setItem("numeroarticoli", 0);
+
+    localStorage.setItem("prezzoscontato", 0);
+
+ 
+   
+   
+}
+    </script>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
